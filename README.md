@@ -7,6 +7,7 @@
 - [Каталог](https://dmkolt-lab.github.io/dmkolt-apps-public/).
 - [Иконка OMA IntraService Monitor, v1](https://dmkolt-lab.github.io/dmkolt-apps-public/assets/icons/intraservice/v1.png).
 - [Прямая ссылка на PNG](https://raw.githubusercontent.com/dmkolt-lab/dmkolt-apps-public/main/assets/icons/intraservice/v1.png).
+- [Иконка OMA Bitrix MCP, v1](https://dmkolt-lab.github.io/dmkolt-apps-public/assets/icons/bitrix/v1.png).
 - [Машиночитаемый каталог](assets/catalog.json).
 
 ## Структура и постоянные ссылки
@@ -34,7 +35,25 @@ assets/icons/<app-id>/v1.png
 
 В пакете плагина OpenAI изображение включается в его assets, а относительные пути задаются в `plugin.json` через `extensions.com.openai.interface.logo` и `extensions.com.openai.interface.composerIcon`. Это настройки оформления плагина, а не MCP tool и не OAuth-параметры.
 
-Для OMA Bitrix потребуется отдельно согласованная иконка Bitrix. Картинка IntraService не назначается ему автоматически. Новый MCP-сервер ради иконки не требуется. Изменения существующего приложения и его публикация выполняются отдельной задачей.
+Для OMA Bitrix опубликована существующая иконка из его исходного проекта, без изменений. Картинка IntraService не назначается ему автоматически. Новый MCP-сервер ради иконки не требуется.
+
+При подготовке пакета Bitrix скопируйте его PNG в пакет по тому же пути. Фрагмент оформления для существующего `plugin.json`:
+
+```json
+{
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "OMA Bitrix MCP",
+        "logo": "./assets/icons/bitrix/v1.png",
+        "composerIcon": "./assets/icons/bitrix/v1.png"
+      }
+    }
+  }
+}
+```
+
+Это только фрагмент оформления, а не полный manifest и не способ установки. Подключение к уже существующему MCP, OAuth и права сохраняются в конфигурации плагина отдельно. Установленное подключение не обновляется от изменения PNG в этом репозитории: оформление нужно применить через поддерживаемый редактор либо публикацию/установку пакета. Здесь такое изменение подключения не выполняется.
 
 Официальная документация: https://developers.openai.com/plugins/build/plugins
 

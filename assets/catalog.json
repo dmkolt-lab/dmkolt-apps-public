@@ -13,6 +13,19 @@
           "height": 1254
         }
       ]
+    },
+    {
+      "id": "bitrix",
+      "name": "OMA Bitrix MCP",
+      "icons": [
+        {
+          "version": 1,
+          "path": "assets/icons/bitrix/v1.png",
+          "mime_type": "image/png",
+          "width": 512,
+          "height": 512
+        }
+      ]
     }
   ]
 }
