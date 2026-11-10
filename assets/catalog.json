@@ -11,6 +11,16 @@
           "mime_type": "image/png",
           "width": 1254,
           "height": 1254
+        },
+        {
+          "version": 1,
+          "variant": "under-10kb",
+          "path": "assets/icons/intraservice/v1-10kb.png",
+          "mime_type": "image/png",
+          "width": 128,
+          "height": 128,
+          "bytes": 8875,
+          "max_bytes": 10000
         }
       ]
     },
@@ -24,6 +34,16 @@
           "mime_type": "image/png",
           "width": 512,
           "height": 512
+        },
+        {
+          "version": 1,
+          "variant": "under-10kb",
+          "path": "assets/icons/bitrix/v1-10kb.png",
+          "mime_type": "image/png",
+          "width": 128,
+          "height": 128,
+          "bytes": 6062,
+          "max_bytes": 10000
         }
       ]
     }

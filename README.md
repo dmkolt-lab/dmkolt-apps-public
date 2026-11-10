@@ -10,6 +10,13 @@
 - [Иконка OMA Bitrix MCP, v1](https://dmkolt-lab.github.io/dmkolt-apps-public/assets/icons/bitrix/v1.png).
 - [Машиночитаемый каталог](assets/catalog.json).
 
+### PNG для custom MCP с ограничением 10 КБ
+
+- [Bitrix: 128×128, 6 062 байта](https://dmkolt-lab.github.io/dmkolt-apps-public/assets/icons/bitrix/v1-10kb.png).
+- [IntraService: 128×128, 8 875 байт](https://dmkolt-lab.github.io/dmkolt-apps-public/assets/icons/intraservice/v1-10kb.png).
+
+Для формы с загрузкой файла скачайте нужный PNG и выберите его в поле значка. Обе версии меньше 10 000 байт. Исходные изображения `v1.png` сохранены; `v1-10kb.png` — уменьшенные PNG с индексированной палитрой и сохранением прозрачности. В новых версиях используем тот же суффикс, проверяем фактический размер файла и указываем его в каталоге.
+
 ## Структура и постоянные ссылки
 
 Иконки: `assets/icons/<app-id>/v1.png`. Идентификаторы приложений — короткие, латиницей, в нижнем регистре: `intraservice`, `bitrix`, `meetings`.
