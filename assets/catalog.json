@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "applications": [
+    {
+      "id": "intraservice",
+      "name": "OMA IntraService Monitor",
+      "icons": [
+        {
+          "version": 1,
+          "path": "assets/icons/intraservice/v1.png",
+          "mime_type": "image/png",
+          "width": 1254,
+          "height": 1254
+        }
+      ]
+    }
+  ]
+}
